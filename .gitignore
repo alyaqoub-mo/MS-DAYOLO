@@ -1,0 +1,328 @@
+# MS-DAYOLO PyTorch - Git Ignore File
+
+# ================================
+# Python
+# ================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+docs/.build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ================================
+# PyTorch & Deep Learning
+# ================================
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.pickle
+
+# Except for pretrained weights (if needed)
+!pretrained_weights/*.pth
+
+# TensorBoard logs
+runs/
+logs/
+tb_logs/
+tensorboard/
+
+# WandB logs
+wandb/
+
+# Training outputs
+outputs/
+results/
+experiments/
+
+# ================================
+# Data & Datasets
+# ================================
+# Large dataset directories
+data/cityscapes/
+data/foggy_cityscapes/
+data/sim10k/
+data/kitti/
+
+# Keep directory structure but ignore content
+data/*/images/
+data/*/labels/
+data/*/annotations/
+
+# Cache files
+*.cache
+*.npy
+*.npz
+
+# Dataset archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# ================================
+# IDE & Editors
+# ================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Kate
+*.kate-swp
+
+# ================================
+# OS Files
+# ================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ================================
+# Project Specific
+# ================================
+# Backup directory
+backup/
+backups/
+
+# Original Darknet compiled files (keep source)
+darknet
+libdarknet.so
+libdarknet.a
+*.o
+
+# Keep cfg and src for reference
+!cfg/
+!src/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Test outputs
+test_outputs/
+debug_outputs/
+
+# Exported models
+*.onnx
+*.torchscript
+*.engine
+*.trt
+
+# Except for final release models
+!models/exported/*.onnx
+
+# ================================
+# Documentation
+# ================================
+# Build artifacts
+docs/build/
+docs/_build/
+docs/api/
+
+# ================================
+# Miscellaneous
+# ================================
+# Backup files
+*.bak
+*.backup
+
+# Compressed files (except small config archives)
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# System files
+*.log
+*.err
+*.out
+
+# Credentials
+credentials.json
+secrets.yaml
+.secrets
+
+# Local configuration overrides
+local_config.yaml
+local_settings.py
+
+# ================================
+# Keep Important Files
+# ================================
+# Configuration templates
+!configs/**/*.yaml
+!configs/**/*.yml
+
+# Documentation
+!docs/*.md
+!*.md
+
+# Scripts
+!scripts/*.py
+!scripts/*.sh
+
+# Tests
+!tests/*.py
